@@ -1,0 +1,708 @@
+*,*::before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+  
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('fonts/Georgia Italic.ttf');
+    src: url('fonts/Georgia Italic.woff');
+    src: url('fonts/PTSans-Bold.ttf');
+    src: url('fonts/PTSans-Bold.woff');
+    src: url('fonts/Raleway-SemiBold.ttf');
+    src: url('fonts/raleway-semibold.woff');
+    src: url('fonts/OpenSans-Bold.ttf');
+    src: url('fonts/opensans-bold.woff');
+    src: url('fonts/Raleway-Regular.ttf');
+    src: url('fonts/Raleway-Regular.woff');
+    src: url('fonts/Raleway-Bold.ttf');
+    src: url('fonts/Raleway-Bold.woff');
+    src: url('fonts/Cardo-Italic.ttf');
+    src: url('fonts/Cardo-Italic.woff');
+    src: url('fonts/Raleway-Light.otf');
+    src: url('fonts/Raleway-Light.woff');
+  }
+
+/*HEADER*/
+
+
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   /* height: 1135px;*/
+    background: url(../img/header/1.png) top center no-repeat;
+    background-size: cover;
+}
+
+.header-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 960px;
+}
+
+/*menu*/
+
+.menu{
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    
+    font-style: italic;
+    font-family: "Georgia";
+    font-size: 25px;
+    color:#4f4d6a;
+}
+
+.navigition{
+    width: 52%;
+   
+    
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+.menu-link{
+    color: #4f4d6a;
+    text-decoration: none;
+    font-size: 11px;
+    
+}
+
+/* end menu */
+
+/* header text*/
+
+
+.header-text{
+
+    text-align: center;
+
+}
+
+.title{
+    font-style: italic;
+    font-family: "Georgia";
+    color: #4f4d6a;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.title {
+    /* чтобы линии не выходили за ширину блока заголовка */
+    overflow: hidden;
+  }
+  .title:before,
+  .title:after {
+    content: '';
+  
+    /* делаем линию строчно-блочной */
+    display: inline-block;
+  
+    /* выравниваем вертикально по середине */
+    vertical-align: middle;
+  
+    /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+    box-sizing: border-box;
+  
+    /* установка ширины в 100% делает линию равной ширине тега заголовка
+    ** благодаря этому линия заполнит все свободное пространство
+    ** слева и справа от текста
+    */
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+  
+    /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
+    ** благодаря этому создается нужный отступ между линиями и текстом
+    */
+    border: solid #f1eff2;
+    border-width: 0 10px;
+  }
+  .title:before {
+    /* смещаем левую линию влево отрицательным отступом, равным 100% ширины
+    ** благодаря этому линия встает слева от текста
+    */
+    margin-left: -100%;
+  }
+  .title:after {
+    /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
+    ** благодаря этому линия встает справа от текста
+    */
+    margin-right: -100%;
+  }
+
+  .header-title{
+        font-family: "Georgia";
+      font-size: 65px;
+      color:#4f4d6a;
+  }
+
+  .text{
+    color:#4f4d6a;
+    border-bottom: 3px solid #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-family: "Open Sans";
+  }
+
+  /* end header text*/
+
+
+  /* button */
+
+  .down{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 600px
+  } 
+
+  .one{
+      background-color: #6a6886;
+      margin-right: 20px;
+      text-align: center;
+      height: 35px;
+      width: 220px;
+      border-radius: 50px;
+      border: 0;
+  }
+
+  .two{
+    background-color: #a18999;
+    text-align: center;
+    height: 35px;
+    width: 220px;
+    border-radius: 50px;
+    border: 0;
+
+  }
+
+  .one a{
+    
+    color: #fdf3f3;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Georgia";
+   
+  }
+
+  .two a{
+    color: #fdf3f3;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Georgia";
+    
+  }
+  /* END HEADER */
+
+
+
+
+  /* WORX */
+
+  .worx{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #ebebeb;
+  }
+  
+  .worx-conteiner{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 960px;
+
+  }
+
+
+  /*  worx text */
+
+
+  .worx-text{
+
+    text-align: center;
+
+}
+  .worx-title{
+    margin-top: 60px;
+    color: #4f4d6a;
+    font-size: 14px;
+}
+
+.worx-title {
+    /* чтобы линии не выходили за ширину блока заголовка */
+    overflow: hidden;
+  }
+  .worx-title:before,
+  .worx-title:after {
+    content: '';
+  
+    /* делаем линию строчно-блочной */
+    display: inline-block;
+  
+    /* выравниваем вертикально по середине */
+    vertical-align: middle;
+  
+    /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+    box-sizing: border-box;
+  
+    /* установка ширины в 100% делает линию равной ширине тега заголовка
+    ** благодаря этому линия заполнит все свободное пространство
+    ** слева и справа от текста
+    */
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+  
+    /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
+    ** благодаря этому создается нужный отступ между линиями и текстом
+    */
+    border: solid #f1eff2;
+    border-width: 0 10px;
+  }
+  .worx-title:before {
+    /* смещаем левую линию влево отрицательным отступом, равным 100% ширины
+    ** благодаря этому линия встает слева от текста
+    */
+    margin-left: -100%;
+  }
+  .worx-title:after {
+    /* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
+    ** благодаря этому линия встает справа от текста
+    */
+    margin-right: -100%;
+  }
+
+  .header-worx{
+      font-size: 50px;
+      color:#4f4d6a;
+      border-bottom: 3px solid #ffffff;
+      
+  }
+
+   /* end worx text*/
+
+
+   /* worx products */
+.worx-products{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #ffffff;
+}
+
+.worx-img{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 22%;
+    color: #4f4d6a;
+}
+
+.worx-img h3{
+    font-size: 17px;
+}
+
+.worx-img p{
+    font-size: 12px;
+}
+.worx-img>img{
+    width: 100%;
+}
+
+.worx-img>a>img{
+    border: 20px solid #efefef;
+    border-radius: 50%;
+    width:100%;
+}
+
+
+
+
+
+/* end worx products*/
+
+  .doun-worx{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+      margin-top: 40px;
+      
+    }
+
+
+
+  /* END WORX */
+
+
+
+  /* COL */
+.col{
+    display: flex;
+    
+    justify-content: center;
+    width: 100%;
+}
+
+.col-conteiner{
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+
+}
+
+.col-conteiner h3{
+    font-size:18px;
+    color: #4f4d6a;
+}
+
+.col-text{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.point{
+    font-size: 12px;
+    color: #4f4d6a;
+    width: 30%;
+
+
+}
+
+.point-one{
+    width:100px;
+    height: 22px;
+    background-color:  #4f4d6a;
+    text-align: center;
+    border-radius: 5px;
+    border: 0;
+
+
+}
+
+.point-one a{
+    font-size: 10px;
+    color:#FFF;
+    text-decoration: none;
+}
+
+  /* END COL */
+
+
+.foter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #505050;
+}
+
+.foter-conteiner{
+    display:flex;
+    flex-direction: column;
+    width: 960px;
+    color: #fff;
+}
+
+.foter-conteiner p{
+    font-size:10px; 
+}
+
+.foter-text{
+    display:flex;
+    justify-content: space-between;
+}
+
+.text-one{
+    width: 60%;
+    margin-top: 55px;
+}
+
+.text-two{
+    margin-top: 55px;
+    width: 30%;
+}
+.text-one h3{
+    font-size:18px;
+}
+.text-two h3{
+    font-size:18px;
+}
+
+.text-one p{
+    font-size:12px;
+
+}
+
+.text-two p{
+    font-size:12px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .header-title{
+        font-size: 60px;
+        
+    }  
+}
+
+@media screen and (max-width: 960px) {
+
+    .header-conteiner{
+        width: 90%;
+    }
+
+    .navigition{
+        width: 70%;   
+    }
+
+    .header-title{
+        font-size: 45px;  
+    }  
+
+    .text{
+        font-size: 12px;
+    }
+
+    .worx-conteiner{
+        width: 90%;
+    }
+
+    .col-conteiner{
+        width: 90%;
+    }
+
+    .foter-conteiner{
+        width: 90%;
+    }
+
+    .header-worx{
+        font-size: 40px;
+     
+    }  
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 15vh;
+    }
+
+    .navigition{
+        width:100%;   
+    }
+
+    .logo{
+        font-size: 15px;
+    }
+
+    .title{  
+        font-size: 12px;
+    }
+
+   
+ 
+
+    .header-title{
+        font-size: 30px;  
+    }  
+
+    .text{
+        font-size: 8px;
+    }
+
+    
+
+    .down{  
+        margin-bottom: 100px
+    } 
+
+    .one{
+ 
+        height: 25px;
+        width: 120px;
+    }
+  
+    .two{
+        height: 25px;
+        width: 120px;
+  
+    }
+  
+    .one a{
+      font-size: 8px;
+    }
+  
+    .two a{
+
+      font-size: 8px;
+
+    }
+
+    .header-worx{
+        font-size: 20px;
+     
+    }  
+
+    .worx-title{
+        margin-top: 30px;
+        font-size: 10px;
+    }
+
+    .worx-img h3{
+        font-size: 13px;
+    }
+    
+    .worx-img p{
+        font-size: 10px;
+    }
+
+    .col-text{
+        margin-bottom: 40px;
+    }
+
+    .doun-worx{
+        margin-bottom: 50px;
+        margin-top: 30px;
+     }
+
+  
+
+}
+
+@media screen and (max-width: 480px){
+
+    .menu{
+        height: 10vh;
+    }
+
+    .navigition{
+        display: none;   
+    }
+
+    .logo{
+        font-size: 15px;
+    }
+
+
+    .title{  
+        font-size: 12px;
+    }
+
+    .header-title{
+        font-size: 30px;  
+    } 
+
+    .text{
+        font-size: 8px;
+    }
+
+    
+    .down{  
+        margin-bottom: 50px
+    } 
+
+    .worx-conteiner{
+        width: 80%;
+  
+    }
+  
+
+    .worx-products{
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: none;
+    }
+
+    .worx-img {
+        width:100%;
+        border-bottom: #fff solid 3px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+   
+    .worx-img a img{
+        width:100%;
+    }
+
+    .worx-img h3{
+        font-size: 20px;
+    }
+
+    .worx-img p{
+        font-size: 15px;
+    }
+
+    .doun-worx{
+
+        margin-bottom:40px;
+        margin-top:20px;
+    }
+
+    .col-conteiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+
+    }
+
+    .col-conteiner h3{
+        font-size: 20px;
+
+    }
+    .col-text{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .point{
+        width: 100%;
+        font-size: 15px;
+
+    }
+
+    .foter-conteiner {
+        width: 80%;
+    }
+
+    .foter-text {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .text-one{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .text-two{
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+
+   
